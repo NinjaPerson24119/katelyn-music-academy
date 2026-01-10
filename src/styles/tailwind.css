@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@theme {
+  --breakpoint-xs: 30em; /* Approximately 480px */
+}
 @plugin "daisyui";
 @plugin "daisyui/theme" {
   name: "wireframe";

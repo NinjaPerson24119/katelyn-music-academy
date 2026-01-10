@@ -2,6 +2,7 @@
   "TAB_TITLE": "Katelyn's Music Academy",
   "NAVIGATION": {
     "HOME": "Home",
+    "ABOUT": "About",
     "LESSONS": "Lessons",
     "CONTACT": "Contact"
   },
@@ -16,6 +17,9 @@
     "SUBTITLE": "There is no right way to learn music.",
     "CONTACT_BUTTON": "Contact Us!"
   },
+  "ABOUT": {
+    "TITLE": "limitless creation"
+  },
   "LESSONS": {
     "TITLE": "Lessons",
     "DESCRIPTION": "Music lessons available to ages 5+. Online or in-person in Heritage Valley, Edmonton, AB.",
@@ -29,6 +33,12 @@
     "REGISTER_BUTTON": "Register Now!"
   },
   "CONTACT": {
-    "TITLE": ""
+    "TITLE": "we'd love to hear from you.",
+    "CONTENT_1": "Interested in music lessons?",
+    "CONTENT_2": "Contact us for rates and more info!",
+    "FORM_FIELD_NAME": "Name",
+    "FORM_FIELD_EMAIL": "Email",
+    "FORM_FIELD_COMMENTS": "Comments / Questions",
+    "FORM_SUBMIT": "Send"
   }
 }

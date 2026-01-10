@@ -8,11 +8,13 @@ import {
 import { i18n } from './i18n';
 
 const PageHome = lazy(() => import('./PageHome'));
+const PageAbout = lazy(() => import('./PageAbout'));
 const PageContact = lazy(() => import('./PageContact'));
 const PageLessons = lazy(() => import('./PageLessons'));
 
 export const ROUTES = {
   HOME: '/home',
+  ABOUT: '/about',
   CONTACT: '/contact',
   LESSONS: '/lessons',
 };
@@ -48,6 +50,12 @@ export const NavigationItems: NavigationItem[] = [
     icon: <></>,
     href: ROUTES.HOME,
     component: <PageHome />,
+  },
+  {
+    text: i18n.t('NAVIGATION.ABOUT'),
+    icon: <></>,
+    href: ROUTES.ABOUT,
+    component: <PageAbout />,
   },
   {
     text: i18n.t('NAVIGATION.LESSONS'),
