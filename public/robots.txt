@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://katelynmusicacademy.com/sitemap.xml
