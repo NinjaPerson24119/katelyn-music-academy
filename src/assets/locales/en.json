@@ -39,6 +39,9 @@
     "FORM_FIELD_NAME": "Name",
     "FORM_FIELD_EMAIL": "Email",
     "FORM_FIELD_COMMENTS": "Comments / Questions",
-    "FORM_SUBMIT": "Send"
+    "FORM_SUBMIT": "Send",
+    "FORM_SUBMIT_COMPLETE": "Submitted",
+    "FORM_SUBMIT_SUCCESS": "Success. You should receive a confirmation email.",
+    "FORM_SUBMIT_ERROR": "An error occurred. Please try again."
   }
 }
