@@ -1,2 +1,5 @@
-# katelyn-music-academy
-Website for Katelyn's Music Academy
+# Katelyn's Music Academy
+
+Website for Katelyn's Music Academy.
+
+Built with Vite, React, and DaisyUI.

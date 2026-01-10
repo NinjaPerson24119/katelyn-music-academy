@@ -1,0 +1,34 @@
+{
+  "TAB_TITLE": "Katelyn's Music Academy",
+  "NAVIGATION": {
+    "HOME": "Home",
+    "LESSONS": "Lessons",
+    "CONTACT": "Contact"
+  },
+  "HEADER": {
+    "TITLE": "katelynmusicacademy"
+  },
+  "FOOTER": {
+    "TITLE": "katelynmusicacademy"
+  },
+  "HOME": {
+    "TITLE": "Quality music lessons your children will love!",
+    "SUBTITLE": "There is no right way to learn music.",
+    "CONTACT_BUTTON": "Contact Us!"
+  },
+  "LESSONS": {
+    "TITLE": "Lessons",
+    "DESCRIPTION": "Music lessons available to ages 5+. Online or in-person in Heritage Valley, Edmonton, AB.",
+    "HOME_LESSONS": "*Lessons may be available to be provided at student's home for an additional fee. In select neighborhoods only.",
+    "LESSON_LENGTH_30_MINUTES": "30 Minute Lesson",
+    "LESSON_LENGTH_30_MINUTES_CONTENT": "30-Minute music lesson. Students will develop rhythmic, melodic, and technical skills in addition to required repertoire and repertoire of the student's choosing. Rate includes lesson time and student resources. Repertoire materials may be needed at an additional cost is supported.",
+    "LESSON_LENGTH_45_MINUTES": "45 Minute Lesson",
+    "LESSON_LENGTH_45_MINUTES_CONTENT": "45-Minute music lesson. Students will develop rhythmic, melodic, and technical skills in addition to required repertoire and repertoire of the student's choosing. Rate includes lesson time and student resources. Repertoire materials may be needed at an additional cost.",
+    "LESSON_LENGTH_60_MINUTES": "60 Minute Lesson",
+    "LESSON_LENGTH_60_MINUTES_CONTENT": "60-Minute music lesson. Students will develop rhythmic, melodic, and technical skills in addition to required repertoire and repertoire of the student's choosing. Rate includes lesson time and student resources. Repertoire materials may be needed at an additional cost.",
+    "REGISTER_BUTTON": "Register Now!"
+  },
+  "CONTACT": {
+    "TITLE": ""
+  }
+}

@@ -1,0 +1,70 @@
+@use './css_reset';
+@use './fonts';
+
+// this should match constants.tsx
+$lg-width: 1200px;
+$md-width: 900px;
+
+// variables
+$main-margin: 20%;
+$layout-spacing: 52px;
+$font-size-header-1: 30px;
+$font-size-header-2: 20px;
+$background: #EEEDEB;
+$text-color-primary: black;
+$text-color-accent: #757263;
+$font-header: "IM Fell DW Pica", serif;
+$font-paragraph: "Libre Caslon Text", serif;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+:root {
+  background-color: $background;
+  font-size: 16px;
+  line-height: 1.1;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  color-scheme: light;
+}
+
+p {
+  font-family: $font-paragraph;
+  color: $text-color-primary;
+  padding-bottom: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, .navigation-item {
+  font-family: $font-header;
+  font-size: $font-size-header-1;
+  font-style: italic;
+  color: $text-color-primary;
+  padding-bottom: 16px;
+}
+
+h2, h3, h4, h5, h6 {
+  font-size: $font-size-header-2;
+}
+
+.accent-text {
+  color: $text-color-accent;
+}
+
+.footer-title {
+  text-transform: none; // counter DaisyUI
+  font-family: $font-header;
+  font-size: $font-size-header-1;
+  font-style: italic;
+  color: $text-color-accent;
+}
+
+.button {
+  background: none;
+}

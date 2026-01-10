@@ -1,0 +1,14 @@
+*.fig
+*.pdf
+
+# images
+*.svg
+*.jpeg
+*.jpg
+*.png
+*.webp
+*.gif
+
+# video
+*.ogv
+*.mp4

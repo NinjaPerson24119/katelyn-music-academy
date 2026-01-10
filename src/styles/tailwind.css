@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "wireframe";
+  default: true;
+  --color-accent: '#757263';
+}

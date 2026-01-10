@@ -1,0 +1,9 @@
+public
+
+.prettierignore
+.gitignore
+
+package.json
+pnpm-lock.yaml
+
+*.md
