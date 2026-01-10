@@ -4,7 +4,7 @@ export default function PageHome() {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col items-center md:w-[65%]">
+    <div className="flex flex-col items-center">
       <h1 className="accent-text">{t('ABOUT.TITLE')}</h1>
       <img
         className="max-w-32 pb-4"

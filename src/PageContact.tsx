@@ -52,7 +52,7 @@ export default function PageContact() {
           {t('CONTACT.CONTENT_2')}
         </p>
       </div>
-      <div className="w-full md:w-1/2 p-4  flex flex-col md:flex-row items-center md:items-start">
+      <div className="w-full md:w-1/2 p-4 flex flex-col md:flex-row items-center md:items-start">
         <form className="form-control w-full max-w-md" onSubmit={handleSubmit}>
           <div className="flex flex-col gap-2 w-full items-center md:items-start">
             <div className="form-control ">

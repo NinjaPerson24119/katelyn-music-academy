@@ -1,12 +1,22 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import { ROUTES } from './routing';
 
 export default function PageHome() {
   const { t } = useTranslation();
 
   return (
     <div className="flex flex-col gap-4 items-center">
-      <h1 className="accent-text">{t('HOME.TITLE')}</h1>
-      <p className="subtitle">{t('HOME.SUBTITLE')}</p>
+      <div className="flex flex-col items-center">
+        <h1 className="accent-text p-0!">{t('HOME.TITLE')}</h1>
+        <p className="subtitle p-0!">{t('HOME.SUBTITLE')}</p>
+      </div>
+      <img
+        className="max-w-32 p-4"
+        width={400}
+        src="/home.webp"
+        alt="Picture of Katelyn in front of trees"
+      />
       <p>
         Learning to read music and improve muscle memory are important aspects
         of musical education; However, just as much learning should be focused
@@ -23,15 +33,11 @@ export default function PageHome() {
         Currently accepting new students for various instruments. Contact for
         more information and rates.
       </p>
-      <button className="btn btn-outline rounded-3xl">
-        <span className="italic p-4">{t('HOME.CONTACT_BUTTON')}</span>
-      </button>
-      <img
-        className="max-w-32 p-4"
-        width={400}
-        src="/home.webp"
-        alt="Picture of Katelyn in front of trees"
-      />
+      <Link to={ROUTES.CONTACT}>
+        <button className="btn btn-outline rounded-3xl">
+          <span className="italic p-4">{t('HOME.CONTACT_BUTTON')}</span>
+        </button>
+      </Link>
     </div>
   );
 }

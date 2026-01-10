@@ -52,12 +52,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 16px;
 }
 
-.navigation-item {
+.navigation-item, .navigation-title {
   font-family: $font-header;
   font-size: $font-size-header-1;
   font-style: italic;
   color: $text-color-primary;
-  padding: 0px;
+  padding-bottom: 0;
 }
 
 h2, h3, h4, h5, h6 {
@@ -82,6 +82,7 @@ h2, h3, h4, h5, h6 {
   font-size: $font-size-header-1;
   font-style: italic;
   color: $text-color-accent;
+  padding-bottom: 0;
 }
 
 .button {
