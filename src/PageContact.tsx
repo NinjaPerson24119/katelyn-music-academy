@@ -145,7 +145,7 @@ export default function PageContact() {
                 </div>
               )}
               {/* Alerts */}
-              <div className="p-8">
+              <div className="align-start  w-64 pt-4">
                 {submitted == SubmissionState.SUBMITTED && <AlertSuccess />}
                 {submitted == SubmissionState.SUBMISSION_ERROR && (
                   <AlertError />
@@ -162,7 +162,7 @@ export default function PageContact() {
 function AlertSuccess() {
   const { t } = useTranslation();
   return (
-    <div role="alert" className="alert alert-success">
+    <div role="alert" className="alert alert-success alert-outline">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-6 w-6 shrink-0 stroke-current"
@@ -184,7 +184,7 @@ function AlertSuccess() {
 function AlertError() {
   const { t } = useTranslation();
   return (
-    <div role="alert" className="alert alert-error">
+    <div role="alert" className="alert alert-error alert-outline">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-6 w-6 shrink-0 stroke-current"
