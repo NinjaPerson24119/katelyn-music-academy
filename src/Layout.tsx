@@ -20,11 +20,13 @@ export function Layout({ content }: LayoutProps) {
               {t('HEADER.TITLE')}
             </span>
           </Link>
-          <div className="flex flex-col xs:flex-row xs:gap-8">
+          <div className="flex flex-col xs:flex-row xs:gap-8 align-center justify-center w-full md:w-auto">
             {NavigationItems.map((item, index) => (
-              <Link key={index} to={item.href}>
-                <p className="navigation-item">{item.text}</p>
-              </Link>
+              <div className="w-full md:w-auto flex justify-center">
+                <Link key={index} to={item.href}>
+                  <p className="navigation-item">{item.text}</p>
+                </Link>
+              </div>
             ))}
           </div>
         </header>
