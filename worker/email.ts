@@ -1,4 +1,6 @@
-import type { EmailPayload, Env } from './types';
+import { Resend } from 'resend';
+import type { CreateEmailOptions } from 'resend';
+import type { Env } from './types';
 
 const BUSINESS_NAME = 'Katelyn Hesse';
 const RESPONSE_SUBJECT = 'Thanks for reaching out - Katelyn Hesse';
@@ -11,7 +13,7 @@ export async function onRequestPostContactForm(request: any, env: Env) {
     const requiredEnvVars = [
       'CONTACT_FORM_EMAIL',
       'NO_REPLY_EMAIL',
-      'BREVO_API_KEY',
+      'RESEND_API_KEY',
     ];
     for (const envVar of requiredEnvVars) {
       if (!env.hasOwnProperty(envVar)) {
@@ -88,32 +90,24 @@ export async function onRequestPostContactForm(request: any, env: Env) {
 }
 
 async function sendEmail(body: any, kind: string, env: Env): Promise<Response> {
-  const messageRequest = new Request('https://api.brevo.com/v3/smtp/email', {
-    method: 'POST',
-    headers: {
-      'content-type': 'application/json',
-      'api-key': env.BREVO_API_KEY,
-    },
-    body: JSON.stringify(body),
-  });
-  const resp = await fetch(messageRequest);
-  if (!resp.ok) {
-    let j = await resp.json();
-    try {
-      j = JSON.stringify(j);
-    } catch {}
+  const resend = new Resend(env.RESEND_API_KEY);
+
+  const { data, error } = await resend.emails.send(body);
+  console.log(data);
+  if (error !== null) {
     console.log(
-      `Failed to send email (${kind}), status: ${resp.status}, json(): ${j}`,
-      JSON.stringify(resp),
+      `Failed to send email (${kind}), error: ${error}`,
+      JSON.stringify(error),
     );
     return new Response(
       JSON.stringify({ error: `Failed to send email (${kind})` }),
       {
-        status: resp.status,
+        status: 500,
         headers: { 'Content-Type': 'application/json' },
       },
     );
   }
+
   return new Response(null, {
     status: 202,
     statusText: 'Accepted',
@@ -125,24 +119,12 @@ function emailBodyFormSubmission(
   name: string,
   email: string,
   message: string,
-): EmailPayload {
+): CreateEmailOptions {
   return {
-    sender: {
-      email: env.NO_REPLY_EMAIL,
-      name: name,
-    },
+    from: `${name} <${env.NO_REPLY_EMAIL}>`,
+    to: [`${BUSINESS_NAME} <${env.CONTACT_FORM_EMAIL}>`],
     subject: `Contact Form Submission from ${name}`,
-    htmlContent: `<p>${message}</br></br>---------------</br>Sent by ${name} &lt;${email}&gt;</p>`,
-    messageVersions: [
-      {
-        to: [
-          {
-            email: env.CONTACT_FORM_EMAIL,
-            name: BUSINESS_NAME,
-          },
-        ],
-      },
-    ],
+    html: `<p>${message}</br></br>---------------</br>Sent by ${name} &lt;${email}&gt;</p>`,
   };
 }
 
@@ -150,23 +132,11 @@ function emailBodyConfirmation(
   env: Env,
   name: string,
   email: string,
-): EmailPayload {
+): CreateEmailOptions {
   return {
-    sender: {
-      email: env.NO_REPLY_EMAIL,
-      name: BUSINESS_NAME,
-    },
+    from: `${BUSINESS_NAME} <${env.NO_REPLY_EMAIL}>`,
+    to: [`${name} <${email}>`],
     subject: RESPONSE_SUBJECT,
-    htmlContent: RESPONSE_BODY,
-    messageVersions: [
-      {
-        to: [
-          {
-            email: email,
-            name: name,
-          },
-        ],
-      },
-    ],
+    html: RESPONSE_BODY,
   };
 }

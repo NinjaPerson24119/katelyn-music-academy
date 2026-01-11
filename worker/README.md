@@ -10,6 +10,6 @@ This function uses Revo to emit a confirmation to the form submitter, and a copy
 Required environment variables:
 | Variable Name       | Description           |
 |---------------------|-----------------------|
-| BREVO_API_KEY       | API key for Brevo     |
+| RESEND_API_KEY       | API key for email API     |
 | CONTACT_FORM_EMAIL  | Target email to relay contact form submission to|
 | NO_REPLY_EMAIL      | No reply email address used as sender for confirmation email|
