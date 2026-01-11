@@ -8,6 +8,8 @@ Implements a catch-all route accepting form fields
 This function uses Revo to emit a confirmation to the form submitter, and a copy of the form submission to the business owner.
 
 Required environment variables:
-- BREVO_API_KEY
-- CONTACT_FORM_EMAIL
-- NO_REPLY_EMAIL
+| Variable Name       | Description           |
+|---------------------|-----------------------|
+| BREVO_API_KEY       | API key for Brevo     |
+| CONTACT_FORM_EMAIL  | Target email to relay contact form submission to|
+| NO_REPLY_EMAIL      | No reply email address used as sender for confirmation email|
