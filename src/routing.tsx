@@ -30,7 +30,7 @@ function WithHelmet({
   return (
     <>
       <Helmet>
-        <title>{props.title ?? DEFAULT_PAGE_TITLE}</title>
+        <title>{DEFAULT_PAGE_TITLE}</title>
       </Helmet>
       {props.children}
     </>
