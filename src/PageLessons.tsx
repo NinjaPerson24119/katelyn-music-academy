@@ -6,7 +6,7 @@ export default function PageLessons() {
   return (
     <div className="flex flex-col items-center md:flex-row md:items-start">
       <div className="w-full md:w-1/2 p-4">
-        <h1>{t('LESSONS.TITLE')}</h1>
+        <h1 className="text-accent">{t('LESSONS.TITLE')}</h1>
         <p>
           Music lessons available to ages 5+. Online or in-person in Heritage
           Valley, Edmonton, AB.
