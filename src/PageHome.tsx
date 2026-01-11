@@ -8,8 +8,8 @@ export default function PageHome() {
   return (
     <div className="flex flex-col gap-4 items-center">
       <div className="flex flex-col items-center">
-        <h1 className="accent-text p-0!">{t('HOME.TITLE')}</h1>
-        <p className="subtitle p-0!">{t('HOME.SUBTITLE')}</p>
+        <h1 className="accent-text">{t('HOME.TITLE')}</h1>
+        <p className="subtitle">{t('HOME.SUBTITLE')}</p>
       </div>
       <img
         className="max-w-32 p-4"
