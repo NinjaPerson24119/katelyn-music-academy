@@ -80,7 +80,7 @@ export default function PageContact() {
         <h1 className="accent-text">{t('CONTACT.TITLE')}</h1>
         <p>{t('CONTACT.CONTENT_1')}</p>
         <p>{t('CONTACT.CONTENT_2')}</p>
-        <p className="italic">{t('CONTACT.CONTENT_3')}</p>
+        <p className="italic text-center">{t('CONTACT.CONTENT_3')}</p>
       </div>
       <div className="w-full md:w-1/2 p-4 flex flex-col md:flex-row items-center md:items-start">
         <form className="form-control w-full max-w-md" onSubmit={handleSubmit}>
