@@ -93,7 +93,6 @@ async function sendEmail(body: any, kind: string, env: Env): Promise<Response> {
   const resend = new Resend(env.RESEND_API_KEY);
 
   const { data, error } = await resend.emails.send(body);
-  console.log(data);
   if (error !== null) {
     console.log(
       `Failed to send email (${kind}), error: ${error}`,
