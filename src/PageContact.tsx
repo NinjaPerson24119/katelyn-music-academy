@@ -105,7 +105,7 @@ export default function PageContact() {
                 </span>
               </label>
               <input
-                name="comments"
+                name="email"
                 type="email"
                 className="input input-bordered"
                 required
