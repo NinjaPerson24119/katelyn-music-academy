@@ -1,7 +1,8 @@
 {
   "name": "katelyn-music-academy",
   "compatibility_date": "2026-01-10",
+  "main": "./dist/worker/index.js",
   "assets": {
-    "directory": "./dist",
-  },
+    "directory": "./dist/client/"
+  }
 }
