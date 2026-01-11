@@ -14,7 +14,7 @@ export function Layout({ content }: LayoutProps) {
     <div className="flex w-full justify-center">
       <div className="flex flex-col items-center min-h-screen w-full md:w-[95%] lg:w-[80%] xl:w-[70%]">
         {/* Header */}
-        <header className="p-8 w-full flex items-center justify-between flex-col md:flex-row">
+        <header className="p-8 pb-0! md:pb-8! w-full flex items-center justify-between flex-col md:flex-row gap-4">
           <Link to={ROUTES.HOME}>
             <span className="navigation-title text-xl font-bold accent">
               {t('HEADER.TITLE')}

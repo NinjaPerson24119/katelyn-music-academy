@@ -7,16 +7,16 @@ export default function PageHome() {
 
   return (
     <div className="flex flex-col gap-4 items-center">
-      <div className="flex flex-col items-center">
-        <h1 className="accent-text">{t('HOME.TITLE')}</h1>
-        <p className="subtitle">{t('HOME.SUBTITLE')}</p>
-      </div>
       <img
         className="max-w-32"
         width={400}
         src="/home.webp"
         alt="Picture of Katelyn in front of trees"
       />
+            <div className="flex flex-col items-center">
+        <h1 className="accent-text text-center">{t('HOME.TITLE')}</h1>
+        <p className="subtitle">{t('HOME.SUBTITLE')}</p>
+      </div>
       <p>
         Learning to read music and improve muscle memory are important aspects
         of musical education; However, just as much learning should be focused
