@@ -12,7 +12,7 @@ export default function PageHome() {
         <p className="subtitle">{t('HOME.SUBTITLE')}</p>
       </div>
       <img
-        className="max-w-32 p-4"
+        className="max-w-32"
         width={400}
         src="/home.webp"
         alt="Picture of Katelyn in front of trees"
