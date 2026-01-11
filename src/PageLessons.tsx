@@ -5,7 +5,7 @@ export default function PageLessons() {
 
   return (
     <div className="flex flex-col items-center md:flex-row">
-      <div className="w-1/2 p-4">
+      <div className="w-full md:w-1/2 p-4">
         <h1>{t('LESSONS.TITLE')}</h1>
         <p>
           Music lessons available to ages 5+. Online or in-person in Heritage
@@ -16,7 +16,7 @@ export default function PageLessons() {
           additional fee. In select neighborhoods only.
         </p>
       </div>
-      <div className="w-1/2 p-4 flex flex-col gap-2">
+      <div className="w-full md:w-1/2 p-4 flex flex-col gap-2">
         {[
           [
             t('LESSONS.LESSON_LENGTH_30_MINUTES'),
