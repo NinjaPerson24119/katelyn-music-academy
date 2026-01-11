@@ -3,7 +3,7 @@ import type { EmailPayload, Env } from './types';
 const BUSINESS_NAME = 'Katelyn Hesse';
 const RESPONSE_SUBJECT = 'Thanks for reaching out - Katelyn Hesse';
 const RESPONSE_BODY =
-  'Thank you for contacting me. I will get back to you as soon as possible.\n\nBest Regards,\nKatelyn Hesse\nKatelyn Music Academy\nhttps://katelynmusicacademy.com';
+  '<h2>Thank you for contacting me.</h2><p>I will get back to you as soon as possible.</p><p>Best Regards,<br/>Katelyn Hesse<br/>Katelyn Music Academy<br/>https://katelynmusicacademy.com</p>';
 
 export async function onRequestPostContactForm(request: any, env: Env) {
   try {
