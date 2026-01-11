@@ -1,2 +1,4 @@
 node_modules/
-dist/
+
+# we must include dist/worker
+dist/client
