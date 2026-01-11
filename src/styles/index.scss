@@ -14,7 +14,7 @@ $background: #EEEDEB;
 $text-color-primary: black;
 $text-color-accent: #757263;
 $font-header: "IM Fell DW Pica", serif;
-$font-paragraph: "Libre Caslon Text", serif;
+$font-paragraph: "Crimson Pro", serif;
 
 html,
 body,
@@ -41,6 +41,7 @@ span {
 }
 
 p {
+  font-family: $font-paragraph;
   padding-bottom: 16px;
 }
 
