@@ -22,9 +22,10 @@ export default function PageContact() {
   );
   const disableForm = useMemo(
     () =>
-      ![SubmissionState.NOT_SUBMITTED, SubmissionState.SUBMISSION_ERROR].includes(
-        submitted,
-      ),
+      ![
+        SubmissionState.NOT_SUBMITTED,
+        SubmissionState.SUBMISSION_ERROR,
+      ].includes(submitted),
     [submitted],
   );
 
@@ -75,13 +76,11 @@ export default function PageContact() {
 
   return (
     <div className="w-full flex flex-col md:flex-row items-center md:items-start">
-      <div className="w-full md:w-1/2 p-4 flex flex-col  items-center">
+      <div className="w-full md:w-1/2 p-4 flex flex-col items-center">
         <h1 className="accent-text">{t('CONTACT.TITLE')}</h1>
-        <p>
-          {t('CONTACT.CONTENT_1')}
-          <br />
-          {t('CONTACT.CONTENT_2')}
-        </p>
+        <p>{t('CONTACT.CONTENT_1')}</p>
+        <p>{t('CONTACT.CONTENT_2')}</p>
+        <p className="italic">{t('CONTACT.CONTENT_3')}</p>
       </div>
       <div className="w-full md:w-1/2 p-4 flex flex-col md:flex-row items-center md:items-start">
         <form className="form-control w-full max-w-md" onSubmit={handleSubmit}>
