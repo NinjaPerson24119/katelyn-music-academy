@@ -74,7 +74,7 @@ export default function PageContact() {
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center md:items-start">
+    <div className="w-full flex flex-col md:flex-row items-center md:items-start">
       <div className="w-full md:w-1/2 p-4 flex flex-col  items-center">
         <h1 className="accent-text">{t('CONTACT.TITLE')}</h1>
         <p>

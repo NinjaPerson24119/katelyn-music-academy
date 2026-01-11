@@ -30,7 +30,7 @@ export function Layout({ content }: LayoutProps) {
         </header>
         {/* Content */}
         <main className="grow w-full md:w-[90%] lg:w-[80%] xl:w-[70%] flex justify-center">
-          <div className="p-4 flex flex-col items-center">{content}</div>
+          <div className="p-4 w-full flex flex-col items-center">{content}</div>
         </main>
         {/* Footer */}
         <footer className="w-full p-4 flex justify-center md:block">
