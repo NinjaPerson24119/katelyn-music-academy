@@ -12,6 +12,4 @@
 	"observability": {
 		"enabled": true
 	},
-  // TODO
-  "vars": {  "MY_VARIABLE": "production_value" }
 }
