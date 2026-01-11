@@ -4,7 +4,7 @@ export default function PageLessons() {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col items-center md:flex-row">
+    <div className="flex flex-col items-center md:flex-row md:items-start">
       <div className="w-full md:w-1/2 p-4">
         <h1>{t('LESSONS.TITLE')}</h1>
         <p>
