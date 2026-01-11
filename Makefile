@@ -6,8 +6,8 @@ run:
 lint:
 	pnpm run lint
 
-# reformat:
-# 	pnpm exec prettier . --write
+reformat:
+	pnpm exec prettier . --write
 
 build:
 	pnpm run build
